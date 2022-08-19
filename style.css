@@ -1,0 +1,56 @@
+* {box-sizing:border-box}
+
+body {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #8879B0;
+}
+
+.funny-text {
+    color: white;
+    text-align: center;
+}
+    .OPP {
+    opacity: 30%;
+}
+
+.slideshow-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(26, 24, 24, 0.3);
+    background-color: white;
+    padding-top: 15px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: rgb(36, 32, 32);
+  font-size: 20px;
+  font-weight: 50px;
+  padding: 8px 12px;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
