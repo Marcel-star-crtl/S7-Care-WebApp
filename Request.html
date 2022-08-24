@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin-top: 10px;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #333;
+            background: #ffffff;
+            
+        }
+        .container {
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .item{
+            background: white;
+            color: #fff;
+            font-size: 20px;
+            padding: 5px;
+            border: skyblue 1px solid;
+
+        }
+
+        .first-header {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+        label{
+            width: 400px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .opp {
+            width: 200px;
+        }
+
+        .opp1 {
+        width: 200px;
+        }
+        form{
+            padding: 10px;
+            justify-content: center;
+        }
+        .btn {
+            padding: 7px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        .btn1 {
+            padding: 7px;
+            width: 150px;
+            background-color: #8607ee;
+            border-radius: 15px;
+            margin-left: 15px;
+        }
+        .button-container {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 1060px;
+        }
+
+        .item:nth-of-type(1){
+            heigth: 400px;
+        }
+        .item:nth-of-type(1){
+            background-color: #8607ee;
+        }
+
+        @media (max-width) {
+            .container{
+                grid-template-columns: 1fr;
+            }
+            
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="first-header">Step1</h1>
+
+    <div class="container">
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+    </div>
+
+    <!---->
+
+    <div class="content-live" id="step1">
+        <h1>Contract Details</h1>
+        <form class="form">  
+            <label> Need a care Giver For </label>  
+            <select class="opp">  
+            <option value = "Babysitting"> Babysitting </option>  
+            <option value = "Cooking"> Cooking </option>  
+            <option value = "Elderly Care"> Elderly Care</option>  
+            <option value = "Cleaning"> Cleaning </option>  
+            </select>  
+        </form>
+        <form>  
+            <label> Care giver sex preference </label>  
+            <select class="opp">  
+            <option value = "Male"> Male</option>  
+            <option value = "Female"> Female </option> 
+            <option value = "Other"> Other </option> 
+            </select>  
+        </form>
+        <form action="/action_page" >   
+            <label> Start Date Preference </label> <input type="datetime-local" id="Test_DatetimeLocal">  
+        </form>
+        <form>  
+            <label> Age Range Of Caregiver </label>  
+            <select class="opp">  
+            <option value = "18-25">18-25</option> 
+            <option value = "26-32">26-32</option> 
+            <option value = "33-40">33-40</option>  
+            </select>  
+        </form>
+        <form>  
+            <label> Task To Be Carried Out </label> <input class="opp1" type="text" placeholder="General Cleanning">
+        </form>
+        <form>  
+            <label> Housing Preference </label>  
+            <select class="opp">  
+            <option value = "In House"> In House </option>  
+            <option value = "Away"> Away </option>    
+            </select>  
+        </form>
+        <form>  
+            <label> Requirements To be Met By Caregiver </label>  
+            <select class="opp">  
+            <option value = "O-level"> O-level </option>  
+            <option value = "First School"> First School </option> 
+            </select>  
+        </form>
+        <div class="button-container">
+            <button class="btn">Cancel</button>
+            <button class="btn1">Continue</button>
+        </div>
+    </div>  
+    </div>
+   
+  <script src="app.js"></script>
+  </body>
+</html>
