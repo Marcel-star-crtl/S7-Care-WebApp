@@ -16,7 +16,7 @@ body{
     padding-right: 10px;
 }
 
-input[type=text], select, textarea {
+input[type=text], [type=date], [type=number], [type=email], select, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -71,7 +71,6 @@ label {
 }
 .client-left{
     padding-top: 50px;
-
     float: left;
     width: 45%;
 }
