@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.contract{
+   box-sizing: border-box;
+}
+.container{
+    font-family: sans-serif;
+    padding: 0 30px 0 20px;
+}
+.container p span{
+    color: #2A0944;
+    font-weight: bold;
+    font-size: large;
+    padding-right: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background: #EEEEEE;
+    border: none;
+    outline: none;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.one{
+    padding: 0px;
+}
+.col-25{
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+}
+.col-75{
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+/* contract */
+.contract-left{
+    float: left;
+    width: 45%;
+}
+.contract-right{
+    float: right;
+    width: 45%;
+}
+/* Client */
+.client{
+    /* padding-top: 250px; */
+    box-sizing: border-box;
+}
+.client-left{
+    padding-top: 50px;
+
+    float: left;
+    width: 45%;
+}
+.client-right{
+    padding-top: 50px;
+
+    float: right;
+    width: 45%;
+}
+.button{
+    float: left;
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+    padding-left: 500px;
+}
+.button > div{
+    padding: 0 20px 10px 0px;
+}
+.cancel button{
+    width: 100px;
+    background: #D0C9C0;
+}
+.confirm button{
+    width: 170px;
+    background: #2A0944;
+    color: white;
+}
+button{
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
