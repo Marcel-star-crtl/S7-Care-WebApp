@@ -1,0 +1,114 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-comtainer {
+    background-image: url("sama hero.jpg");
+    width: 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    border: 5px solid red;
+    box-sizing: border-box;
+    background-position: center center;
+    background-position: center center;
+}
+body{
+    background-image: url("sama hero.jpg");
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.split {
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top:16%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right:20px;
+    background-color: whitesmoke;
+}
+.centered {
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btnRequest {
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-collapse: separate;
+    border-bottom: 2px solid black;
+    border-color: black;
+    padding: 30px 80px;
+    text-align:center;
+    font-size: 10px;
+    border-bottom: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: 15px 10px;
+    position: relative; left: 20px; top: 60px;
+    line-height: 2;
+    
+}
+.box_parent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#btndivideright {
+    position: relative; top: 100px; left: 300px;
+}
+#btndevideleft {
+    position: relative; top: 60px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative; top: 150px; right: 500px;
+    font-size: larger; 
+    color: white;
+    word-spacing: 5px;
+    line-height: 1.8;
+}
+.center {
+    line-height: 2;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative; left: 10%;right: 0%;
+}
+.head {
+    background-color: rgba(162, 81, 171, 0.726);
+}
+.logo {
+    display: block;
+   position: relative;
+   right: 100%;
+   left: 0%;
+
+}
+

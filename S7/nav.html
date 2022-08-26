@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header img {
+            display:block;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+        li,
+        a,
+        button {
+            font-family: "Monstserrat", sans-serif;
+            font-weight:800;
+            font-size: 16px;
+            color:whitesmoke;
+            text-decoration: none;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+        }
+
+
+        .navigate_links  {
+            list-style: none;
+            background-attachment: red;
+        }
+        
+        .navigate_links li  {
+            display:inline-block;
+            padding: 0px 20px;
+            background-color: rgb(148, 105, 189);
+        }
+
+        .navigate_links li a {
+            transition: all 0.3 ease-in-out 0s;
+            background-color: rgb(148, 105, 189);
+        }
+
+        button {
+            padding: 9px 12px;
+            border-radius: 15px;
+            background-color: rgb(95, 95, 183);
+            color: whitesmoke;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .navigate_links li a:hover {
+            color:rgb(178, 70, 88);
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 12px;
+        }
+
+        button:hover {
+            background-color: rgb(234, 246, 246);
+            color: black;
+        }
+       .hr{
+         height: 50px;
+         background-color: rgb(103, 157, 190);  
+       }
+      
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <link rel="stylesheet"href="./nav.css">
+    <nav class="navbar">
+        <img class="logos" src="s7care.jpeg" alt ="loading image">
+        <nav>
+            <ul class="navigate_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li> 
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+        <a class="signin" href\="#">
+            <button>Login</button>
+            <button>Register</button>
+            </a>
+
+        <div class="bg-container">
+    </header>
+    <hr>
+    <div class="bg-container">
+    </div>
+
+    <div class="split right">
+        <div class="center">
+            <h1 style="text-align:center">SAMA CARE</h1>
+            <p style="text-align:center">What Do You Want Your Maid To Do</p>
+        </div>
+        <div class="">
+            <div class="box_parent">
+                <div class="btnRequest"> <img src="cooking.png" height="80" width="100"/>COOKING</div>
+                <div class="btnRequest"> <img src="elderly.png" height="80" width="100"/>ELDERLY CARE</div>  
+        </div>
+        <div >
+            <div class="box_parent">
+                <div class="btnRequest"> <img src="babysitting.png" height="80" width="100"/>BABYSITTING</div>
+                <div class="btnRequest"> <img src="cleaning.png" height="80" width="100"/>CLEANING</div>
+          </div>
+       </div>
+       <button id="btndivideright">Continue</button>
+    </div>
+
+    <div class="split left">
+        <div class="centered">
+            <div>
+                <h2>S7 CARE</h2>
+                <P> Care Pass Treatment</P>
+                <div></div>
+                <button id="btndevideleft">Get Standard</button>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
